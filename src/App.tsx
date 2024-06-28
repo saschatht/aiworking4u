@@ -7,7 +7,7 @@ import { Amplify } from "aws-amplify";
 import outputs from "../amplify_outputs.json";
 import "@cloudscape-design/global-styles/index.css";
 
-import { Authenticator } from '@aws-amplify/ui-react'
+//import { Authenticator } from '@aws-amplify/ui-react'
 import '@aws-amplify/ui-react/styles.css'
 
 import Header from "@cloudscape-design/components/header";
@@ -28,7 +28,7 @@ export default function App() {
 
   const sendPrompt = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+/*
     const { data, errors } = await client.queries.generateBedrock({
       prompt,
     });
@@ -39,6 +39,7 @@ export default function App() {
     } else {
       console.log(errors);
     }
+      */
   };
 
   return (
@@ -75,7 +76,7 @@ export default function App() {
               </Container>
             </Form>
           </form>
-          <Button variant="primary" onClick={signOut}>Sign out</Button>
+          <Button variant="primary" /*onClick={signOut}*/>Sign out</Button>
         </SpaceBetween>
       </Container>
     </SpaceBetween>
