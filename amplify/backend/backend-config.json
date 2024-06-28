@@ -1,1 +1,111 @@
-{}
+{
+  "function": {
+    "BedrockConverse": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "aiworking4ubackendutils": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "LambdaLayer"
+    },
+    "aiworking4uboto3": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "LambdaLayer"
+    },
+    "aiworking4ugooglesearch": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "LambdaLayer"
+    },
+    "aiworking4uhtmlutils": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "LambdaLayer"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_BedrockConverse_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "BedrockConverse"
+        }
+      ]
+    },
+    "AMPLIFY_function_BedrockConverse_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "BedrockConverse"
+        }
+      ]
+    },
+    "AMPLIFY_function_aiworking4ubackendutils_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "aiworking4ubackendutils"
+        }
+      ]
+    },
+    "AMPLIFY_function_aiworking4ubackendutils_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "aiworking4ubackendutils"
+        }
+      ]
+    },
+    "AMPLIFY_function_aiworking4uboto3_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "aiworking4uboto3"
+        }
+      ]
+    },
+    "AMPLIFY_function_aiworking4uboto3_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "aiworking4uboto3"
+        }
+      ]
+    },
+    "AMPLIFY_function_aiworking4ugooglesearch_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "aiworking4ugooglesearch"
+        }
+      ]
+    },
+    "AMPLIFY_function_aiworking4ugooglesearch_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "aiworking4ugooglesearch"
+        }
+      ]
+    },
+    "AMPLIFY_function_aiworking4uhtmlutils_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "aiworking4uhtmlutils"
+        }
+      ]
+    },
+    "AMPLIFY_function_aiworking4uhtmlutils_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "aiworking4uhtmlutils"
+        }
+      ]
+    }
+  }
+}

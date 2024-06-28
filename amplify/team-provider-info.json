@@ -1,15 +1,39 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-aiworking4u-dev-f924e-authRole",
-      "UnauthRoleArn": "arn:aws:iam::975053239733:role/amplify-aiworking4u-dev-f924e-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::975053239733:role/amplify-aiworking4u-dev-f924e-authRole",
+      "AuthRoleName": "amplify-aiworking4u-dev-8869f-authRole",
+      "UnauthRoleArn": "arn:aws:iam::975053239733:role/amplify-aiworking4u-dev-8869f-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::975053239733:role/amplify-aiworking4u-dev-8869f-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-aiworking4u-dev-f924e-deployment",
-      "UnauthRoleName": "amplify-aiworking4u-dev-f924e-unauthRole",
-      "StackName": "amplify-aiworking4u-dev-f924e",
-      "StackId": "arn:aws:cloudformation:us-east-1:975053239733:stack/amplify-aiworking4u-dev-f924e/5674d5a0-34e4-11ef-8e08-0ecc462ffea3",
-      "AmplifyAppId": "d2u4tigkrvus05"
+      "DeploymentBucketName": "amplify-aiworking4u-dev-8869f-deployment",
+      "UnauthRoleName": "amplify-aiworking4u-dev-8869f-unauthRole",
+      "StackName": "amplify-aiworking4u-dev-8869f",
+      "StackId": "arn:aws:cloudformation:us-east-1:975053239733:stack/amplify-aiworking4u-dev-8869f/18d65950-3519-11ef-97a4-12eb006f9723",
+      "AmplifyAppId": "d1i1xpfiv0z3ds"
+    },
+    "categories": {
+      "function": {
+        "aiworking4uboto3": {
+          "deploymentBucketName": "amplify-aiworking4u-dev-8869f-deployment",
+          "s3Key": "amplify-builds/aiworking4uboto3-LambdaLayerVersionab0ef05d-build.zip"
+        },
+        "aiworking4ubackendutils": {
+          "deploymentBucketName": "amplify-aiworking4u-dev-8869f-deployment",
+          "s3Key": "amplify-builds/aiworking4ubackendutils-LambdaLayerVersionc6575772-build.zip"
+        },
+        "aiworking4ugooglesearch": {
+          "deploymentBucketName": "amplify-aiworking4u-dev-8869f-deployment",
+          "s3Key": "amplify-builds/aiworking4ugooglesearch-LambdaLayerVersion73caa79e-build.zip"
+        },
+        "aiworking4uhtmlutils": {
+          "deploymentBucketName": "amplify-aiworking4u-dev-8869f-deployment",
+          "s3Key": "amplify-builds/aiworking4uhtmlutils-LambdaLayerVersion08c55ec8-build.zip"
+        },
+        "BedrockConverse": {
+          "deploymentBucketName": "amplify-aiworking4u-dev-8869f-deployment",
+          "s3Key": "amplify-builds/BedrockConverse-73774843794865474e66-build.zip"
+        }
+      }
     }
   }
 }
