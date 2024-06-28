@@ -1,40 +1,27 @@
-import { useEffect, useState } from "react";
-import type { Schema } from "../amplify/data/resource";
-import { generateClient } from "aws-amplify/data";
+import { useState } from "react";
+import Header from "@cloudscape-design/components/header";
+import Container from "@cloudscape-design/components/container";
+import SpaceBetween from "@cloudscape-design/components/space-between";
+import Input from "@cloudscape-design/components/input";
+import Button from "@cloudscape-design/components/button";
 
-const client = generateClient<Schema>();
-
-function App() {
-  const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
-
-  useEffect(() => {
-    client.models.Todo.observeQuery().subscribe({
-      next: (data) => setTodos([...data.items]),
-    });
-  }, []);
-
-  function createTodo() {
-    client.models.Todo.create({ content: window.prompt("Todo content") });
-  }
+export default function App() {
+  const [value, setValue] = useState("");
 
   return (
-    <main>
-      <h1>My todos</h1>
-      <button onClick={createTodo}>+ new</button>
-      <ul>
-        {todos.map((todo) => (
-          <li key={todo.id}>{todo.content}</li>
-        ))}
-      </ul>
-      <div>
-        🥳 App successfully hosted. Try creating a new todo.
-        <br />
-        <a href="https://docs.amplify.aws/react/start/quickstart/#make-frontend-updates">
-          Review next step of this tutorial.
-        </a>
-      </div>
-    </main>
+    <SpaceBetween size="m">
+      <Header variant="h1">Hello World!</Header>
+
+      <Container>
+        <SpaceBetween size="s">
+          <span>Start editing to see some magic happen</span>
+          <Input
+            value={value}
+            onChange={(event) => setValue(event.detail.value)}
+          />
+          <Button variant="primary">Click me</Button>
+        </SpaceBetween>
+      </Container>
+    </SpaceBetween>
   );
 }
-
-export default App;
