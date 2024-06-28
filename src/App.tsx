@@ -20,11 +20,11 @@ import FormField from "@cloudscape-design/components/form-field";
 
 Amplify.configure(outputs);
 
-const client = generateClient<Schema>();
+//const client = generateClient<Schema>();
 export default function App() {
   const [prompt, setPrompt] = useState<string>("Como puedo ayudarte?");
   //const [answer, setAnswer] = useState<string | null>(null);
-  const [answer, setAnswer] = useState<string>("");
+  //const [answer, setAnswer] = useState<string>("");
 
   const sendPrompt = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
