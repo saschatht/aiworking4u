@@ -1,7 +1,7 @@
 import { FormEvent, useState } from "react";
 
-import { generateClient } from "aws-amplify/api";
-import { Schema } from "../amplify/data/resource";
+//import { generateClient } from "aws-amplify/api";
+//import { Schema } from "../amplify/data/resource";
 
 import { Amplify } from "aws-amplify";
 import outputs from "../amplify_outputs.json";
@@ -24,10 +24,12 @@ Amplify.configure(outputs);
 export default function App() {
   const [prompt, setPrompt] = useState<string>("Como puedo ayudarte?");
   //const [answer, setAnswer] = useState<string | null>(null);
-  //const [answer, setAnswer] = useState<string>("");
+  const [answer, setAnswer] = useState<string>("");
 
   const sendPrompt = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    setAnswer("hola mundo");
 /*
     const { data, errors } = await client.queries.generateBedrock({
       prompt,
@@ -54,7 +56,6 @@ export default function App() {
             value={answer}
             rows={20}
             disableBrowserAutocorrect
-            disableBrowserSpellcheck
           ></Textarea>
           <form onSubmit={sendPrompt}>
             <Form
