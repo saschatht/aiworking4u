@@ -1,18 +1,19 @@
 body {
-  margin: 0;
-  background: linear-gradient(180deg, rgb(117, 81, 194), rgb(255, 255, 255));
-  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0;
+  margin-bottom: 0;
+  background: #000000;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  height: 100vh;
-  width: 100vw;
   justify-content: center;
   align-items: center;
+  display:block;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  display:block;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
@@ -22,13 +23,13 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #ffffff;
   cursor: pointer;
   transition: border-color 0.25s;
-  color: white;
+  color: black;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: blue;
 }
 button:focus,
 button:focus-visible {
@@ -43,9 +44,9 @@ ul {
   display: flex;
   flex-direction: column;
   margin: 8px 0;
-  border: 1px solid black;
+  border: 1px solid white;
   gap: 1px;
-  background-color: black;
+  background-color: white;
   border-radius: 8px;
   overflow: auto;
 }
@@ -53,6 +54,7 @@ ul {
 li {
   background-color: white;
   padding: 8px;
+  color: black;
 }
 
 li:hover {
@@ -61,5 +63,26 @@ li:hover {
 
 a {
   font-weight: 800;
+  color: white;
   text-decoration: none;
+}
+
+h1 {
+  color: white;
+}
+
+textarea {
+  font-size: 20;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header {
+  display:inline-block;
+}
+
+.logo {
+  filter: invert(100);
+  width: 100px;
+  height: 100px;
 }
